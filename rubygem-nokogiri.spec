@@ -21,6 +21,7 @@ Requires: rubygem(rake-compiler) >= 0
 Requires: rubygem(minitest) >= 1.6.0
 Requires: rubygem(hoe) >= 2.6.0
 Requires: libxml2
+Requires: libxslt
 BuildRequires: rubygems
 BuildRequires: libxml2-devel
 BuildRequires: libxslt-devel
@@ -103,5 +104,8 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Mon Oct 18 2010 : Sergio Rubio <rubiojr@frameos.org> - 1.4.3.1-2
+- Fixed deps
+
 * Mon Oct 18 2010 : Sergio Rubio <rubiojr@frameos.org> - 1.4.3.1-1
 - Initial package
