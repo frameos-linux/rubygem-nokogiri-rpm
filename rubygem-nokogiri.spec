@@ -7,19 +7,16 @@
 Summary: Nokogiri (鋸) is an HTML, XML, SAX, and Reader parser
 Name: rubygem-%{gemname}
 Version: 1.4.3.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 Group: Development/Languages
 License: GPLv2+ or Ruby
 URL: http://nokogiri.org
 Source0: http://gemcutter.orggems/%{gemname}-%{version}.gem
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires: rubygems
-Requires: rubygem(rubyforge) >= 2.0.4
 Requires: rubygem(racc) >= 0
 Requires: rubygem(rexical) >= 0
 Requires: rubygem(rake-compiler) >= 0
-Requires: rubygem(minitest) >= 1.6.0
-Requires: rubygem(hoe) >= 2.6.0
 Requires: libxml2
 Requires: libxslt
 BuildRequires: rubygems
@@ -104,6 +101,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Sun Dec 19 2010 Sergio Rubio <rubiojr@frameos.org> - 1.4.3.1-2
+- remove some buildeps
+
 * Mon Oct 18 2010 : Sergio Rubio <rubiojr@frameos.org> - 1.4.3.1-2
 - Fixed deps
 
